@@ -1,0 +1,14 @@
+For Single GPU:
+1000 ：    --L3_clusternum 20  --L3_batchsize 10 --L2_batchsize 1 --L32L2_times 5 --L22L1_times 4 --L3_model_ckptpath "storage/ckpt/TSP60_EP50.ckpt" 
+          --L2_model_ckptpath "storage/ckpt/tsp1000_categorical.ckpt" --L2_sparse 100 --L1_model_ckptpath "storage/ckpt/tsp1000_categorical.ckpt" --L1_sparse 100
+
+10000：    --L3_clusternum 200 --L3_batchsize 50 --L2_batchsize 1 --L32L2_times 25 --L22L1_times 8 --L3_model_ckptpath "storage/ckpt/TSP60_EP50.ckpt" 
+           --L2_model_ckptpath "storage/ckpt/epoch_32.ckpt" --L2_sparse 100 --L1_model_ckptpath "storage/ckpt/epoch_32.ckpt" --L1_sparse 100
+
+
+For Multi GPU:
+1000 ：    --L3_clusternum 20  --L3_batchsize 10 --L2_batchsize 1 --L1_batchsize 1 --L32L2_times 5 --L22L1_times 2 --GPU_num 2 --L3_model_ckptpath "storage/ckpt/TSP60_EP50.ckpt" 
+          --L2_model_ckptpath "storage/ckpt/TSP280_EP50.ckpt" --L2_sparse -1 --L1_model_ckptpath "storage/ckpt/tsp1000_categorical.ckpt" --L1_sparse 100  
+
+10000：    --L3_clusternum 200 --L3_batchsize 50 --L2_batchsize 1 --L1_batchsize 1 --L32L2_times 25 --L22L1_times 4 --GPU_num 2 --L3_model_ckptpath "storage/ckpt/TSP60_EP50.ckpt" 
+           --L2_model_ckptpath "storage/ckpt/epoch_32.ckpt" --L2_sparse 100 --L1_model_ckptpath "storage/ckpt/epoch_32.ckpt" --L1_sparse 100
