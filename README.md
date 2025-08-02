@@ -1,0 +1,18 @@
+# AD3: A Multi-Scale Asynchronous Divide-Diffuse-Decode Diffusion Framework for TSP Solving [Scalable Data Science]
+Code for the paper AD3: A Multi-Scale Asynchronous Divide-Diffuse-Decode Diffusion Framework for TSP Solving [Scalable Data Science]
+
+## Dependencies
+AD3 is built in Python 3.8.13  and Pytorch  1.11.0. 
+And Please use the following command to install the requirements:
+```bash
+pip install -r requirements.txt
+```
+
+
+## Evaluate model
+We provide both single-GPU and multi-GPU configurations in AD3_evaluate_S.py and AD3_evaluate_P.py. We are currently integrating them.
+```bash
+python AD3_evaluate_S.py
+python AD3_evaluate_P.py
+```
+If you would like to use this, please refer to the reproducing scripts for more details.
