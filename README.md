@@ -12,8 +12,5 @@ The models for reproduce could be download from https://drive.google.com/drive/f
 
 ## Evaluate
 We provide both single-GPU and multi-GPU configurations in AD3_evaluate_S.py and AD3_evaluate_P.py. We are currently integrating them.
-```bash
-python AD3_evaluate_S.py
-python AD3_evaluate_P.py
-```
-If you would like to use this, please refer to the reproducing scripts for more details.
+
+If you would like to use them, the reproducing setting file 'Reproducing_sets.txt' have been prepared details.
